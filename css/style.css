@@ -13,6 +13,10 @@ body {
   background-size: auto; */
 }
 
+a:hover {
+  color: #b9eaff;
+}
+
 .gray-color {
   color: #858585;
 }
@@ -29,6 +33,12 @@ body {
     rgba(255, 255, 255, 0.384),
     rgba(111, 0, 255, 0)
   );
+}
+
+.logo {
+  font-size: 2.5rem;
+  margin: 0 3rem;
+  color: #000000;
 }
 
 .navbar-brand {
@@ -85,7 +95,7 @@ body {
 
 .coding {
   width: 17%;
-  left: 51rem;
+  left: 49rem;
   top: 7rem;
 }
 
@@ -107,8 +117,9 @@ body {
   top: 12rem;
 }
 
-.feature-img {
+.feature-img:hover {
   /* width: 50%; */
+  transform: scale(1.2);
 }
 
 .feature-img.heart {
@@ -187,4 +198,15 @@ body {
   position: absolute;
   left: 12rem;
   bottom: -2rem;
+  -webkit-animation: mover 5s infinite alternate;
+  animation: mover 5s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
 }
