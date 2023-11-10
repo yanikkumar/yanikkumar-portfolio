@@ -76,7 +76,6 @@ a:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: auto;
 }
 
@@ -85,7 +84,6 @@ a:hover {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: auto;
 }
 
@@ -112,7 +110,7 @@ a:hover {
 .coding {
   width: 17%;
   left: 49rem;
-  top: 7rem;
+  top: 8rem;
 }
 
 .camera {
@@ -123,13 +121,13 @@ a:hover {
 
 .cards {
   width: 16%;
-  right: 20rem;
+  right: 16rem;
   top: 8rem;
 }
 
 .business {
   width: 18%;
-  right: 9rem;
+  right: 7rem;
   top: 12rem;
 }
 
