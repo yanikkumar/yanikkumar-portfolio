@@ -25,6 +25,13 @@ a:hover {
   background-color: #D9D9D9;
 }
 
+.bg-pink {
+  background-color: #ffebeb;
+}
+.bg-blue {
+  background-color: #b9eaff;
+}
+
 .navbar {
   background-image: linear-gradient(
     to bottom,
@@ -66,6 +73,15 @@ a:hover {
 
 #home {
   background-image: url("../img/bgLeft.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+#work {
+  background-image: url("../img/bgRight.svg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
