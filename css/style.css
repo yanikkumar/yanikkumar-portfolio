@@ -22,7 +22,7 @@ a:hover {
 }
 
 .bg-gray {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .bg-pink {
@@ -139,6 +139,17 @@ a:hover {
 .feature-img.heart {
   width: 20rem;
   margin-top: -9rem;
+  animation: 1.5s ease 0s infinite beat;
+}
+
+@keyframes beat {
+  0%, 50%, 100% { transform: scale(1, 1); }
+  30%, 80% { transform: scale(0.92, 0.95); }
+}
+
+@keyframes pulse {
+  0%, 50%, 100% {  background: #fee; }
+  30%, 80% { background: #fff; }
 }
 
 .custom-hr {
@@ -152,7 +163,7 @@ a:hover {
 }
 
 .about-left {
-  margin-top: 13rem;
+  margin-top: 16rem;
 }
 
 .about-text {
@@ -169,8 +180,9 @@ a:hover {
 
 .clickToSee {
   width: 24rem;
-  margin-top: -6rem;
+  margin-top: -5.5rem;
   margin-left: 3rem;
+  animation: mover 2.3s infinite alternate;
 }
 
 .btn-main {
@@ -212,15 +224,42 @@ a:hover {
   position: absolute;
   left: 12rem;
   bottom: -2rem;
-  -webkit-animation: mover 5s infinite alternate;
-  animation: mover 5s infinite alternate;
 }
 
 @-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
 }
-@keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+
+.subscribe {
+  height: 4rem;
+  border: 0.4rem solid #858585;
+  border-radius: 50px;
+  background-color: #ffebeb;
+  border-right: 0;
+}
+
+.subscribe:focus {
+  background-color: #ffebeb;
+  /* border: 0.4rem solid #d9d9d9; */
+}
+
+.subscribe::placeholder {
+  color: #858585;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.btn-subscribe {
+  padding: 0 3rem;
+  border: 0.4rem solid #858585;
+  border-radius: 50px;
+  color: #000000;
+  background-color: #b9eaff;
+  font-size: 1.5rem;
+  border-left: 0;
+}
+
+.btn-subscribe:hover {
+  background-color: #d9d9d9;
 }
