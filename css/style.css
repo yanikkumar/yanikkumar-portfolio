@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+html,
+body {
+  font-family: "Lilita One", cursive;
+  font-size: 16px;
+
+  /* background-image: url("../img/bgLeft.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto; */
+}
+
+a:hover {
+  color: #b9eaff;
+}
+
+.gray-color {
+  color: #858585;
+}
+
+.bg-gray {
+  background-color: #d9d9d9;
+}
+
+.bg-pink {
+  background-color: #ffebeb;
+}
+.bg-blue {
+  background-color: #b9eaff;
+}
+
+.navbar {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0.616),
+    rgba(255, 255, 255, 0.384),
+    rgba(111, 0, 255, 0)
+  );
+}
+
+.logo {
+  font-size: 2.5rem;
+  margin: 0 3rem;
+  color: #000000;
+}
+
+.navbar-brand {
+  font-size: 4rem;
+}
+
+.navbar-nav {
+  font-size: 2rem;
+  border-radius: 50px;
+  background: #b9eaff;
+}
+
+.nav-link {
+  margin: 0 3rem;
+  color: #000000;
+}
+
+.navbar-nav .nav-link.active {
+  color: #858585;
+  border-radius: 50px;
+  background: #ffebeb;
+  padding: 0 5rem;
+  margin: 8px 8px 8px 0px;
+}
+
+#home {
+  background-image: url("../img/bgLeft.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: auto;
+}
+
+#work {
+  background-image: url("../img/bgRight.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: auto;
+}
+
+.home-main {
+  margin-bottom: -2rem;
+}
+
+.welcome-text {
+  font-size: 6.2rem;
+  margin: 15rem 0;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.guitar {
+  width: 29%;
+  left: 39%;
+  position: absolute;
+}
+
+.coding {
+  width: 17%;
+  left: 52%;
+  top: -20%;
+  position: absolute;
+}
+
+.camera {
+  width: 27%;
+  left: 60%;
+  top: 15%;
+  position: absolute;
+}
+
+.cards {
+  width: 16%;
+  right: 16%;
+  top: -18%;
+  position: absolute;
+}
+
+.business {
+  width: 18%;
+  right: 8%;
+  top: -10%;
+  position: absolute;
+}
+
+#featured-img {
+  position: relative;
+  margin-top: 15%;
+}
+
+.feature-img {
+  position: absolute;
+  width: 20%;
+  bottom: 80%;
+}
+
+.feature-img:hover {
+  /* width: 50%; */
+  transform: scale(1.2);
+}
+
+.feature-img.heart {
+  /* width: 22%; */
+  right: 0%;
+  top: 62%;
+  position: absolute;
+  animation: 1.5s ease 0s infinite beat;
+}
+
+@keyframes beat {
+  0%,
+  50%,
+  100% {
+    transform: scale(1, 1);
+  }
+  30%,
+  80% {
+    transform: scale(0.92, 0.95);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  50%,
+  100% {
+    background: #fee;
+  }
+  30%,
+  80% {
+    background: #fff;
+  }
+}
+
+.custom-hr {
+  height: 12px;
+  border-top: 5px solid #858585;
+  border-bottom: 5px solid #858585;
+}
+
+#about {
+  margin-top: 5rem;
+}
+
+.about-left {
+  margin-top: 16rem;
+}
+
+.about-text {
+  font-size: 6rem;
+}
+
+.about-info {
+  font-size: 3rem;
+}
+
+.skills {
+  position: relative;
+  z-index: 999;
+}
+
+.clickToSee {
+  position: absolute;
+  width: 65%;
+  margin-top: -14%;
+  margin-left: 5%;
+  animation: mover 2.3s infinite alternate;
+}
+
+.btn-main {
+  transform: scale(1.3);
+  color: #858585;
+  box-shadow: 0px 5px 4px #b9eaff;
+  border-radius: 50px;
+  background: #ffebeb;
+  /* margin-left: 23rem; */
+  border: none;
+}
+
+.btn-main:hover {
+  transform: scale(1.5);
+  color: #858585;
+  background: #ffebeb;
+}
+
+.funimg {
+  position: relative;
+}
+
+.teehee {
+  position: absolute;
+  width: 25%;
+  margin-top: -24%;
+  margin-left: 15%;
+}
+
+#work {
+  margin-top: 5rem;
+}
+
+.work-card {
+  padding: 5rem 0;
+  box-shadow: 0px 5px 4px #858585;
+  position: relative;
+}
+
+.work-card:hover {
+  transform: scale(1.1);
+}
+
+.work-img {
+  position: absolute;
+  left: 35%;
+  bottom: -15%;
+  z-index: 999;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.subscribe {
+  height: 4rem;
+  border: 0.4rem solid #858585;
+  border-radius: 50px;
+  background-color: #ffebeb;
+  border-right: 0;
+}
+
+.subscribe:focus {
+  background-color: #ffebeb;
+  /* border: 0.4rem solid #d9d9d9; */
+}
+
+.subscribe::placeholder {
+  color: #858585;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.btn-subscribe {
+  padding: 0 3rem;
+  border: 0.4rem solid #858585;
+  border-radius: 50px;
+  color: #000000;
+  background-color: #b9eaff;
+  font-size: 1.5rem;
+  border-left: 0;
+}
+
+.btn-subscribe:hover {
+  background-color: #d9d9d9;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .welcome-text {
+    font-size: 4rem;
+    margin: 10rem 0;
+  }
+
+  .guitar {
+    width: 30%;
+    left: 39%;
+    top: -23%;
+    position: absolute;
+  }
+
+  .coding {
+    width: 20%;
+    left: 55%;
+    top: -27%;
+    position: absolute;
+  }
+
+  .camera {
+    width: 35%;
+    left: 55%;
+    top: -13%;
+    position: absolute;
+  }
+
+  .cards {
+    width: 20%;
+    right: 5%;
+    top: -27%;
+    position: absolute;
+  }
+
+  .business {
+    width: 25%;
+    right: 0%;
+    top: -20%;
+    position: absolute;
+  }
+
+  #about {
+    margin-top: 5rem;
+  }
+
+  .about-left {
+    margin-top: 1rem;
+  }
+
+  .about-text {
+    font-size: 4rem;
+  }
+
+  .about-info {
+    font-size: 3rem;
+  }
+
+  .clickToSee {
+    position: absolute;
+    width: 90%;
+    margin-top: -5%;
+    margin-left: 0%;
+    animation: mover 2.3s infinite alternate;
+  }
+
+  .teehee {
+    position: absolute;
+    width: 45%;
+    margin-top: -42%;
+    margin-left: -10%;
+  }
+
+  .feature-img.heart {
+    width: 40%;
+    right: 30%;
+    top: 40%;
+    position: absolute;
+    animation: 1.5s ease 0s infinite beat;
+  }
+}
