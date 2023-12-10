@@ -148,13 +148,27 @@ a:hover {
 }
 
 @keyframes beat {
-  0%, 50%, 100% { transform: scale(1, 1); }
-  30%, 80% { transform: scale(0.92, 0.95); }
+  0%,
+  50%,
+  100% {
+    transform: scale(1, 1);
+  }
+  30%,
+  80% {
+    transform: scale(0.92, 0.95);
+  }
 }
 
 @keyframes pulse {
-  0%, 50%, 100% {  background: #fee; }
-  30%, 80% { background: #fff; }
+  0%,
+  50%,
+  100% {
+    background: #fee;
+  }
+  30%,
+  80% {
+    background: #fff;
+  }
 }
 
 .custom-hr {
@@ -198,7 +212,7 @@ a:hover {
   box-shadow: 0px 5px 4px #b9eaff;
   border-radius: 50px;
   background: #ffebeb;
-  margin-left: 23rem;
+  /* margin-left: 23rem; */
   border: none;
 }
 
@@ -208,10 +222,15 @@ a:hover {
   background: #ffebeb;
 }
 
+.funimg {
+  position: relative;
+}
+
 .teehee {
-  width: 27rem;
-  margin-top: -14rem;
-  margin-left: 8rem;
+  position: absolute;
+  width: 25%;
+  margin-top: -24%;
+  margin-left: 15%;
 }
 
 #work {
@@ -221,6 +240,7 @@ a:hover {
 .work-card {
   padding: 5rem 0;
   box-shadow: 0px 5px 4px #858585;
+  position: relative;
 }
 
 .work-card:hover {
@@ -229,13 +249,18 @@ a:hover {
 
 .work-img {
   position: absolute;
-  left: 12rem;
-  bottom: -2rem;
+  left: 35%;
+  bottom: -15%;
+  z-index: 999;
 }
 
 @-webkit-keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 .subscribe {
@@ -269,4 +294,79 @@ a:hover {
 
 .btn-subscribe:hover {
   background-color: #d9d9d9;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .welcome-text {
+    font-size: 4rem;
+    margin: 10rem 0;
+  }
+
+  .guitar {
+    width: 30%;
+    left: 39%;
+    top: -23%;
+    position: absolute;
+  }
+
+  .coding {
+    width: 20%;
+    left: 48%;
+    top: -32%;
+    position: absolute;
+  }
+
+  .camera {
+    width: 35%;
+    left: 47%;
+    top: -8%;
+    position: absolute;
+  }
+
+  .cards {
+    width: 20%;
+    right: 12%;
+    top: -28%;
+    position: absolute;
+  }
+
+  .business {
+    width: 25%;
+    right: 11%;
+    top: -18%;
+    position: absolute;
+  }
+
+  #about {
+    margin-top: 5rem;
+  }
+
+  .about-left {
+    margin-top: 1rem;
+  }
+
+  .about-text {
+    font-size: 4rem;
+  }
+
+  .about-info {
+    font-size: 3rem;
+  }
+
+  .clickToSee {
+    position: absolute;
+    width: 90%;
+    margin-top: -5%;
+    margin-left: 0%;
+    animation: mover 2.3s infinite alternate;
+  }
+
+  .teehee {
+    position: absolute;
+    width: 45%;
+    margin-top: -42%;
+    margin-left: -10%;
+  }
 }
