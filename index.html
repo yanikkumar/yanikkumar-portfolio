@@ -35,7 +35,9 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto ps-2">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >HOME</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#aboutsection">ABOUT</a>
@@ -202,7 +204,10 @@
             <h1 class="gray-color about-info d-flex d-inline">
               Adventurer, Explorer, Learner
             </h1>
-            <button class="btn btn-light rounded-5 btn-main float-end" onclick="location.href='resume.html'">
+            <button
+              class="btn btn-light rounded-5 btn-main float-end"
+              onclick="location.href='resume.html'"
+            >
               See My Professional Resume
             </button>
           </div>
@@ -310,17 +315,31 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-4 mx-auto">
-            <form class="py-2">
+            <form
+              class="py-2 gform"
+              action="https://script.google.com/macros/s/AKfycbzlmP6-s4V1L1O8fOv7gLRaZRlsSvEj7zcQfoF3s9zfKxgODcx3fcILFepo1bjt53ND/exec"
+              method="POST"
+            >
+              <div
+                style="display: none"
+                class="alert alert-info thankyou_message rounded-5"
+              >
+                <h6 class="text-center">
+                  <em>Hurrayy!</em> you are subscribed to my email list!
+                </h6>
+              </div>
               <div class="input-group mb-3">
                 <input
-                  type="text"
+                  type="email"
                   class="form-control rounded-5 rounded-end border-end-0 border border-5 subscribe"
                   id="newsletters"
+                  name="email"
                   placeholder="enter your email"
+                  required
                 />
                 <button
                   class="btn btn-outline-secondary text-dark rounded-5 rounded-start border border-5 bg-blue border border-start-0 fs-5"
-                  type="button"
+                  type="submit"
                   id="subscribeBtn"
                   style="position: relative; right: 6px"
                 >
@@ -344,7 +363,31 @@
           <div class="col-12 col-sm-6">
             <div class="card rounded-4 shadow border-0 bg-gray mb-3">
               <div class="card-body">
-                <form class="p-3">
+                <form
+                  action="https://script.google.com/macros/s/AKfycbx8L6Zl0_-fBtFbEBfb_fGnn875CwS1leiCkMSvQIJ6PabVcl-qpFaklu-lXe5Gmmsp/exec"
+                  method="POST"
+                  class="p-3 gform g-3"
+                  enctype="multipart/form-data"
+                >
+                  <!-- FormCarry Contact Form Setup -->
+                  <!-- <form
+                  action="https://formcarry.com/s/3rPnBEDHpkh"
+                  method="POST"
+                  class="p-3"
+                  enctype="multipart/form-data"
+                > -->
+
+                  <!-- Thankyou Message -->
+                  <div
+                    style="display: none"
+                    class="alert alert-info thankyou_message rounded-3"
+                  >
+                    <h4 class="text-center">
+                      <em>Merci!</em> for contacting! I will soon connect with
+                      you.
+                    </h4>
+                  </div>
+
                   <div class="row">
                     <div class="col-4">
                       <label for class="fs-3 my-auto">name</label>
@@ -354,11 +397,14 @@
                         type="text"
                         class="form-control rounded-4"
                         id="name"
+                        name="name"
                         placeholder="enter your name"
+                        required
                       />
                       <label for="name" class="form-label ms-2 gray-color fs-5"
                         >enter your name</label
                       >
+                      <div class="invalid-feedback">Name Required</div>
                     </div>
                   </div>
 
@@ -371,11 +417,14 @@
                         type="text"
                         class="form-control rounded-4"
                         id="email"
+                        name="email"
                         placeholder="enter your email"
+                        required
                       />
                       <label for="email" class="form-label ms-2 gray-color fs-5"
                         >enter your email</label
                       >
+                      <div class="invalid-feedback">Email Required</div>
                     </div>
                   </div>
 
@@ -387,13 +436,16 @@
                       <textarea
                         class="form-control rounded-4"
                         placeholder="Leave a message here"
+                        name="message"
                         id="message"
+                        required
                       ></textarea>
                       <label
                         for="message"
                         class="form-label ms-2 gray-color fs-5"
                         >any message for me</label
                       >
+                      <div class="invalid-feedback">Message Required</div>
                     </div>
                   </div>
 
@@ -506,5 +558,10 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/scripts.js"></script>
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="./js/form-submission-handler.js"
+    ></script>
   </body>
 </html>
